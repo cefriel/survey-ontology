@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/survey-ontology#"
+     xml:base="https://w3id.org/survey-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:qb="http://purl.org/linked-data/cube#"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rvo="http://w3id.org/rv-ontology#"
+     xmlns:sur="https://w3id.org/survey-ontology#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dcmi-terms="http://dublincore.org/documents/dcmi-terms/">
+    <owl:Ontology rdf:about="https://w3id.org/survey-ontology#">
+    	<!--
+        <owl:imports rdf:resource="http://purl.org/linked-data/cube#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/ro#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/wfdesc#"/>
+        <owl:imports rdf:resource="http://purl.org/wf4ever/wfprov#"/>
+        <owl:imports rdf:resource="http://w3id.org/rv-ontology#"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
+    	-->
+        <dc:contributor xml:lang="en">Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme.</dc:contributor>
+        <dc:creator xml:lang="en">Damiano Scandolari</dc:creator>
+        <dc:creator xml:lang="en">Gloria Re Calegari</dc:creator>
+        <dc:creator xml:lang="en">Irene Celino</dc:creator>
+        <dc:creator xml:lang="en">Mario Scrocca</dc:creator>
+        <dc:rights xml:lang="en">The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan&quot; and link back to https://w3id.org/survey-ontology</dc:rights>
+        <dc:subject xml:lang="en">Survey, Question, Answer, Variable</dc:subject>
+        <dc:title xml:lang="en">The Survey Ontology</dc:title>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <vann:preferredNamespacePrefix>sur</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/survey-ontology#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">Ontology for surveys based on the Coney data model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Survey Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">V 1.0, Release 2020</owl:versionInfo>
+        <foaf:homepage rdf:resource="https://w3id.org/survey-ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/survey-ontology#answeredIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#answeredIn">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyCompletionTask"/>
+        <rdfs:label>answered in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#completedFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#completedFor">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyCompletionTask"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyTarget"/>
+        <rdfs:label>completed for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#completesQuestion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#completesQuestion">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:label>completes question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasAnswer -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#hasAnswer">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#Answer"/>
+        <rdfs:label>has answer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasLatentVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#hasLatentVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#LatentVariable"/>
+        <rdfs:label>has latent variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasObservableVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#hasObservableVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#ObservableVariable"/>
+        <rdfs:label>has observable variable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasVisualization -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#hasVisualization">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#MultipleChoiceQuestion"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>has visualization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#inSurveyProcedure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#inSurveyProcedure">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyProcedure"/>
+        <rdfs:label>in survey procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#leadsTo">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:label>leads to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#startsWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/survey-ontology#startsWith">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyProcedure"/>
+        <rdfs:range rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:label>starts with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasAnswerText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasAnswerText">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has answer text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasCompletionTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasCompletionTimestamp">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#CompletedQuestion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>has completion timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasLink -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasLink">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#Talk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has link</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasOrderNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasOrderNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#ClosedAnswer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has order number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasPoints -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasPoints">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#ClosedAnswer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has points</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyProcedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasText">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyProcedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#hasValue">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#ClosedAnswer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#participantId -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#participantId">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#Participant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>participant id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#sessionId -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/survey-ontology#sessionId">
+        <rdfs:domain rdf:resource="https://w3id.org/survey-ontology#SurveyCompletionTask"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>session id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://w3id.org/rv-ontology#Model -->
+
+    <owl:Class rdf:about="http://w3id.org/rv-ontology#Model">
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rv-ontology#Variable -->
+
+    <owl:Class rdf:about="http://w3id.org/rv-ontology#Variable"/>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Answer -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#Answer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/survey-ontology#Talk"/>
+        <rdfs:label>Answer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#CheckboxQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#CheckboxQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#ClosedQuestion"/>
+        <rdfs:label>Checkbox Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#ClosedAnswer -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#ClosedAnswer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#Answer"/>
+        <rdfs:label>Closed Answer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#ClosedQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#ClosedQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:label>Closed Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#CompletedQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#CompletedQuestion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Observation"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/wfdesc#Output"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:label>Completed Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#CompletedSurvey -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#CompletedSurvey">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#Slice"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
+        <rdfs:label>Completed Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#LatentVariable -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#LatentVariable">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rv-ontology#Variable"/>
+        <rdfs:label>Latent Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#MultipleChoiceQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#MultipleChoiceQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#ClosedQuestion"/>
+        <rdfs:label>Multiple Choice Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#MutipleInputQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#MutipleInputQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#OpenQuestion"/>
+        <rdfs:label>Multiple Input Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#ObservableVariable -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#ObservableVariable">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rv-ontology#Variable"/>
+        <rdfs:label>Observable Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#OpenAnswer -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#OpenAnswer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#Answer"/>
+        <rdfs:label>Open Answer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#OpenQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#OpenQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#Question"/>
+        <rdfs:label>Open Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Participant -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#Participant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:label>Participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Question -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#Question">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/survey-ontology#Talk"/>
+        <rdfs:label>Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#QuestionVisualization -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#QuestionVisualization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Question Visualization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SingleInputQuestion -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SingleInputQuestion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#OpenQuestion"/>
+        <rdfs:label>Single Input Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Survey -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#Survey">
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+        <rdfs:label>Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SurveyCompletionTask -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyCompletionTask">
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/wfprov#ProcessRun"/>
+        <rdfs:label>Survey Completion Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SurveyDataSet -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyDataSet">
+        <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#DataSet"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <rdfs:label>Survey Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SurveyElement -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyElement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Survey Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SurveyProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyProcedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/wfdesc#Process"/>
+        <rdfs:label>Survey Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#SurveyTarget -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#SurveyTarget">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>Survey Target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Talk -->
+
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#Talk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#SurveyElement"/>
+        <rdfs:label>Talk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Dropdown -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Dropdown">
+        <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>Dropdown</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Emoji -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Emoji">
+        <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>Emoji</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Option -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Option">
+        <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>Option</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Scale -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Scale">
+        <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/survey-ontology#Slider -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/survey-ontology#Slider">
+        <rdf:type rdf:resource="https://w3id.org/survey-ontology#QuestionVisualization"/>
+        <rdfs:label>Slider</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
