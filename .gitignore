@@ -1,0 +1,3 @@
+ontology/*
+!ontology/so.*
+!ontology/so.shapes.*
