@@ -289,8 +289,8 @@
                         rdfs:label "Multiple Choice Question" .
 
 
-###  https://w3id.org/survey-ontology#MutipleInputQuestion
-:MutipleInputQuestion rdf:type owl:Class ;
+###  https://w3id.org/survey-ontology#MultipleInputQuestion
+:MultipleInputQuestion rdf:type owl:Class ;
                       rdfs:subClassOf :OpenQuestion ;
                       rdfs:label "Multiple Input Question" .
 

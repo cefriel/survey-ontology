@@ -260,10 +260,10 @@
 <https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#ClosedQuestion> .
 <https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Choice Question" .
 # 
-# https://w3id.org/survey-ontology#MutipleInputQuestion
-<https://w3id.org/survey-ontology#MutipleInputQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/survey-ontology#MutipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#OpenQuestion> .
-<https://w3id.org/survey-ontology#MutipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Input Question" .
+# https://w3id.org/survey-ontology#MultipleInputQuestion
+<https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#OpenQuestion> .
+<https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Input Question" .
 # 
 # https://w3id.org/survey-ontology#ObservableVariable
 <https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

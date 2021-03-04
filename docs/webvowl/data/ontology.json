@@ -617,11 +617,11 @@
       "IRI-based" : "dateTime"
     }
   }, {
-    "iri" : "https://w3id.org/survey-ontology#MutipleInputQuestion",
+    "iri" : "https://w3id.org/survey-ontology#MultipleInputQuestion",
     "baseIri" : "https://w3id.org/survey-ontology",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MutipleInputQuestion",
+      "IRI-based" : "MultipleInputQuestion",
       "undefined" : "Multiple Input Question"
     },
     "id" : "59",
