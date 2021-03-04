@@ -447,9 +447,9 @@
     
 
 
-    <!-- https://w3id.org/survey-ontology#MutipleInputQuestion -->
+    <!-- https://w3id.org/survey-ontology#MultipleInputQuestion -->
 
-    <owl:Class rdf:about="https://w3id.org/survey-ontology#MutipleInputQuestion">
+    <owl:Class rdf:about="https://w3id.org/survey-ontology#MultipleInputQuestion">
         <rdfs:subClassOf rdf:resource="https://w3id.org/survey-ontology#OpenQuestion"/>
         <rdfs:label>Multiple Input Question</rdfs:label>
     </owl:Class>
