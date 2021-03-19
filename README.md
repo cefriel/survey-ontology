@@ -13,6 +13,13 @@ The intended use of terms and their relations with referred ontologies are detai
 The material generated in the different activities carried out during the development of the vocabulary, use
 cases, user stories, glossary of terms, etc., will be available in the [Vocabulary Wiki](#)
 
+### Survey Ontology In-Use
+List of project and datasets using the Survey Ontology:
+- Damiano Scandolari, Gloria Re Calegari, Mario Scrocca, & Irene Celino. (2020). TESS Network Motivation Survey Dataset [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3739058
+- Mario Scrocca, Marco Comerio, Damiano Scandolari, & Gloria Re Calegari. (2021). R2R Choice Criteria Survey Dataset (Version 1.0.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4593471
+
+To add something to the list please either submit a pull request or open an issue.
+
 ### License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International
