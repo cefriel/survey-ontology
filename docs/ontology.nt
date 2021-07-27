@@ -1,24 +1,19 @@
 <https://w3id.org/survey-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/linked-data/cube#> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/wf4ever/ro#> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/wf4ever/wfdesc#> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/wf4ever/wfprov#> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/rv-ontology#> .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov#> .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/contributor> "Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme."@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Damiano Scandolari"@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Gloria Re Calegari"@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Irene Celino"@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/creator> "Mario Scrocca"@en .
-<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/rights> "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology"@en .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/rights> "The Survey Ontology is available under the Creative Commons Attribution 4.0 license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology."@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/subject> "Survey, Question, Answer, Variable"@en .
 <https://w3id.org/survey-ontology#> <http://purl.org/dc/elements/1.1/title> "The Survey Ontology"@en .
-<https://w3id.org/survey-ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<https://w3id.org/survey-ontology#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/survey-ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sur" .
 <https://w3id.org/survey-ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/survey-ontology#" .
 <https://w3id.org/survey-ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for surveys based on the Coney data model."@en .
 <https://w3id.org/survey-ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Ontology"@en .
-<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "V 1.0, Release 2020"@en .
+<https://w3id.org/survey-ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "V 1.1, Release 2021"@en .
+<https://w3id.org/survey-ontology#> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/survey-ontology> .
 # 
 # 
 # #################################################################
@@ -52,6 +47,9 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -64,64 +62,106 @@
 # #################################################################
 # 
 # 
+# http://purl.org/linked-data/cube#dataSet
+<http://purl.org/linked-data/cube#dataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/linked-data/cube#dataSet> <http://purl.org/vocab/vann/usageNote> "Property linking a completed question to a survey dataset." .
+# 
+# http://purl.org/linked-data/cube#observation
+<http://purl.org/linked-data/cube#observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/linked-data/cube#observation> <http://purl.org/vocab/vann/usageNote> "Property linking a completed survey with the completed questions defined in the survey completion task by the participant." .
+# 
+# http://purl.org/wf4ever/wfprov#describedByParameter
+<http://purl.org/wf4ever/wfprov#describedByParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/wf4ever/wfprov#describedByParameter> <http://purl.org/vocab/vann/usageNote> "Property linking a completed survey to the completed questions composing it." .
+# 
+# http://purl.org/wf4ever/wfprov#wasOutputFrom
+<http://purl.org/wf4ever/wfprov#wasOutputFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/wf4ever/wfprov#wasOutputFrom> <http://purl.org/vocab/vann/usageNote> "Property linking a completed survey to the survey completion task generating it." .
+# 
+# http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://purl.org/vocab/vann/usageNote> "Property linking a survey research object to the resources composing it (e.g. survey dataset, survey procedure, etc.)" .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://purl.org/vocab/vann/usageNote> "Property linking a survey completion task to the participant performing it." .
+# 
+# http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/vocab/vann/usageNote> "Property linking a completed survey and/or a completed question to the participant performing the survey completion task." .
+# 
 # https://w3id.org/survey-ontology#answeredIn
 <https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
 <https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyCompletionTask> .
+<https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Property defining for a completed question the survey completion task, performed by a survey participant, collecting this output." .
 <https://w3id.org/survey-ontology#answeredIn> <http://www.w3.org/2000/01/rdf-schema#label> "answered in" .
 # 
 # https://w3id.org/survey-ontology#completedFor
 <https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyCompletionTask> .
 <https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyTarget> .
+<https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Property associating a survey completion to the survey target for that completion." .
 <https://w3id.org/survey-ontology#completedFor> <http://www.w3.org/2000/01/rdf-schema#label> "completed for" .
 # 
 # https://w3id.org/survey-ontology#completesQuestion
 <https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
 <https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a completed question to the question element of the survey that is answered by the participant." .
 <https://w3id.org/survey-ontology#completesQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "completes question" .
+# 
+# https://w3id.org/survey-ontology#describedByProcess
+<https://w3id.org/survey-ontology#describedByProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/survey-ontology#describedByProcess> <http://purl.org/vocab/vann/usageNote> "Property linking a survey completion task to the survey procedure describing it." .
 # 
 # https://w3id.org/survey-ontology#hasAnswer
 <https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
 <https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#Answer> .
+<https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a completed question to the answer element of the survey that is selected by the participant." .
 <https://w3id.org/survey-ontology#hasAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "has answer" .
 # 
 # https://w3id.org/survey-ontology#hasLatentVariable
 <https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Question> .
 <https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#LatentVariable> .
+<https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a survey question to the latent variable measured by the question." .
 <https://w3id.org/survey-ontology#hasLatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has latent variable" .
 # 
 # https://w3id.org/survey-ontology#hasObservableVariable
 <https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Question> .
 <https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#ObservableVariable> .
+<https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a survey question to the observable variable measured by the question." .
 <https://w3id.org/survey-ontology#hasObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has observable variable" .
 # 
 # https://w3id.org/survey-ontology#hasVisualization
 <https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#MultipleChoiceQuestion> .
 <https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a survey question to the visualisation expected for the question." .
 <https://w3id.org/survey-ontology#hasVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "has visualization" .
 # 
 # https://w3id.org/survey-ontology#inSurveyProcedure
 <https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
 <https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyProcedure> .
+<https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a survey element to the survey procedure it belongs to." .
 <https://w3id.org/survey-ontology#inSurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "in survey procedure" .
 # 
 # https://w3id.org/survey-ontology#leadsTo
 <https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
 <https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Property describing the flow between different survey elements." .
 <https://w3id.org/survey-ontology#leadsTo> <http://www.w3.org/2000/01/rdf-schema#label> "leads to" .
 # 
 # https://w3id.org/survey-ontology#startsWith
 <https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
 <https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Property identifying the first survey element for a survey procedure." .
 <https://w3id.org/survey-ontology#startsWith> <http://www.w3.org/2000/01/rdf-schema#label> "starts with" .
 # 
 # 
@@ -133,70 +173,89 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://purl.org/vocab/vann/usageNote> "Timestamp at which a survey completion task is ended." .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://purl.org/vocab/vann/usageNote> "Timestamp at which a survey completion task is started." .
+# 
 # https://w3id.org/survey-ontology#hasAnswerText
 <https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
 <https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking a completed question to the textual answer provided by the user." .
 <https://w3id.org/survey-ontology#hasAnswerText> <http://www.w3.org/2000/01/rdf-schema#label> "has answer text" .
 # 
 # https://w3id.org/survey-ontology#hasCompletionTimestamp
 <https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#CompletedQuestion> .
 <https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp at which a survey question is completed by the participant." .
 <https://w3id.org/survey-ontology#hasCompletionTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has completion timestamp" .
 # 
 # https://w3id.org/survey-ontology#hasLink
 <https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Talk> .
 <https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#comment> "Link associated to a talk survey element." .
 <https://w3id.org/survey-ontology#hasLink> <http://www.w3.org/2000/01/rdf-schema#label> "has link" .
 # 
 # https://w3id.org/survey-ontology#hasOrderNumber
 <https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
 <https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Order for a closed answer among the available answers for a question." .
 <https://w3id.org/survey-ontology#hasOrderNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has order number" .
 # 
 # https://w3id.org/survey-ontology#hasPoints
 <https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
 <https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#comment> "Points associated to an answer." .
 <https://w3id.org/survey-ontology#hasPoints> <http://www.w3.org/2000/01/rdf-schema#label> "has points" .
 # 
 # https://w3id.org/survey-ontology#hasStatus
 <https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
 <https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Status of a survey procedure." .
 <https://w3id.org/survey-ontology#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
 # 
 # https://w3id.org/survey-ontology#hasText
 <https://w3id.org/survey-ontology#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyElement> .
 <https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description for a survey element." .
 <https://w3id.org/survey-ontology#hasText> <http://www.w3.org/2000/01/rdf-schema#label> "has text" .
 # 
 # https://w3id.org/survey-ontology#hasTitle
 <https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyProcedure> .
 <https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title for a survey procedure." .
 <https://w3id.org/survey-ontology#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
 # 
 # https://w3id.org/survey-ontology#hasValue
 <https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#ClosedAnswer> .
 <https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Value for a survey answer." .
 <https://w3id.org/survey-ontology#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # https://w3id.org/survey-ontology#participantId
 <https://w3id.org/survey-ontology#participantId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#Participant> .
 <https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier for a participant." .
 <https://w3id.org/survey-ontology#participantId> <http://www.w3.org/2000/01/rdf-schema#label> "participant id" .
 # 
 # https://w3id.org/survey-ontology#sessionId
 <https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/survey-ontology#SurveyCompletionTask> .
 <https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier for a survey completion task." .
 <https://w3id.org/survey-ontology#sessionId> <http://www.w3.org/2000/01/rdf-schema#label> "session id" .
 # 
 # 
@@ -208,6 +267,33 @@
 # #################################################################
 # 
 # 
+# http://purl.org/linked-data/cube#DataSet
+<http://purl.org/linked-data/cube#DataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/linked-data/cube#Observation
+<http://purl.org/linked-data/cube#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/linked-data/cube#Slice
+<http://purl.org/linked-data/cube#Slice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/wfdesc#Output
+<http://purl.org/wf4ever/wfdesc#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/wfdesc#Process
+<http://purl.org/wf4ever/wfdesc#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/wfprov#Artifact
+<http://purl.org/wf4ever/wfprov#Artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/wfprov#ProcessRun
+<http://purl.org/wf4ever/wfprov#ProcessRun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://w3id.org/rv-ontology#Model
 <http://w3id.org/rv-ontology#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/rv-ontology#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
@@ -215,26 +301,36 @@
 # http://w3id.org/rv-ontology#Variable
 <http://w3id.org/rv-ontology#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/survey-ontology#Answer
 <https://w3id.org/survey-ontology#Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
 <https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Question> .
 <https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Talk> .
+<https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#comment> "An available answer for a survey question." .
 <https://w3id.org/survey-ontology#Answer> <http://www.w3.org/2000/01/rdf-schema#label> "Answer" .
 # 
 # https://w3id.org/survey-ontology#CheckboxQuestion
 <https://w3id.org/survey-ontology#CheckboxQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#CheckboxQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#ClosedQuestion> .
+<https://w3id.org/survey-ontology#CheckboxQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "A question having a limited set of potential answers and allowing the participant to select more than one answer." .
 <https://w3id.org/survey-ontology#CheckboxQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Checkbox Question" .
 # 
 # https://w3id.org/survey-ontology#ClosedAnswer
 <https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Answer> .
+<https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#comment> "An available closed answer for a survey question." .
 <https://w3id.org/survey-ontology#ClosedAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Closed Answer" .
 # 
 # https://w3id.org/survey-ontology#ClosedQuestion
 <https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "A question in a survey with a defined set of available answers." .
 <https://w3id.org/survey-ontology#ClosedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Closed Question" .
 # 
 # https://w3id.org/survey-ontology#CompletedQuestion
@@ -242,100 +338,119 @@
 <https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Observation> .
 <https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Output> .
 <https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Answer provided by a participant in completing a survey for a specific question." .
 <https://w3id.org/survey-ontology#CompletedQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Completed Question" .
 # 
 # https://w3id.org/survey-ontology#CompletedSurvey
 <https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Slice> .
 <https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#Artifact> .
+<https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "A survey completed by a participant following a survey procedure." .
 <https://w3id.org/survey-ontology#CompletedSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Completed Survey" .
 # 
 # https://w3id.org/survey-ontology#LatentVariable
 <https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
+<https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A latent variable represents a variable that is measured indirectly through different observable variables." .
 <https://w3id.org/survey-ontology#LatentVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Latent Variable" .
 # 
 # https://w3id.org/survey-ontology#MultipleChoiceQuestion
 <https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#ClosedQuestion> .
+<https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "A question having a limited set of potential answers and allowing the participant to select only one answer." .
 <https://w3id.org/survey-ontology#MultipleChoiceQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Choice Question" .
 # 
 # https://w3id.org/survey-ontology#MultipleInputQuestion
 <https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#OpenQuestion> .
+<https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "An open-ended answer allowing multiple inputs from the participant." .
 <https://w3id.org/survey-ontology#MultipleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Multiple Input Question" .
 # 
 # https://w3id.org/survey-ontology#ObservableVariable
 <https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rv-ontology#Variable> .
+<https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable that is directly measured collecting data about it." .
 <https://w3id.org/survey-ontology#ObservableVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Variable" .
 # 
 # https://w3id.org/survey-ontology#OpenAnswer
 <https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Answer> .
+<https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#comment> "An open answer for a survey open-ended question." .
 <https://w3id.org/survey-ontology#OpenAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Open Answer" .
 # 
 # https://w3id.org/survey-ontology#OpenQuestion
 <https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#Question> .
+<https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "An open-ended question in a survey." .
 <https://w3id.org/survey-ontology#OpenQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Open Question" .
 # 
 # https://w3id.org/survey-ontology#Participant
 <https://w3id.org/survey-ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/survey-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "A participant to a survey study." .
 <https://w3id.org/survey-ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Participant" .
 # 
 # https://w3id.org/survey-ontology#Question
 <https://w3id.org/survey-ontology#Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
 <https://w3id.org/survey-ontology#Question> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/survey-ontology#Talk> .
+<https://w3id.org/survey-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#comment> "A question requiring an input from the participant in a survey." .
 <https://w3id.org/survey-ontology#Question> <http://www.w3.org/2000/01/rdf-schema#label> "Question" .
 # 
 # https://w3id.org/survey-ontology#QuestionVisualization
 <https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#comment> "A visualisation method for a multiple choice question." .
 <https://w3id.org/survey-ontology#QuestionVisualization> <http://www.w3.org/2000/01/rdf-schema#label> "Question Visualization" .
 # 
 # https://w3id.org/survey-ontology#SingleInputQuestion
 <https://w3id.org/survey-ontology#SingleInputQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SingleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#OpenQuestion> .
+<https://w3id.org/survey-ontology#SingleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "An open-ended answer expecting a single input from the participant." .
 <https://w3id.org/survey-ontology#SingleInputQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Single Input Question" .
 # 
 # https://w3id.org/survey-ontology#Survey
 <https://w3id.org/survey-ontology#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#ResearchObject> .
+<https://w3id.org/survey-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "A research object aggregating resources for a survey research study." .
 <https://w3id.org/survey-ontology#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
 # 
 # https://w3id.org/survey-ontology#SurveyCompletionTask
 <https://w3id.org/survey-ontology#SurveyCompletionTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SurveyCompletionTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfprov#ProcessRun> .
+<https://w3id.org/survey-ontology#SurveyCompletionTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution of a survey procedure by a participant." .
 <https://w3id.org/survey-ontology#SurveyCompletionTask> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Completion Task" .
 # 
 # https://w3id.org/survey-ontology#SurveyDataSet
 <https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#DataSet> .
 <https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
+<https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of data collected for a survey considering the completions performed by participants." .
 <https://w3id.org/survey-ontology#SurveyDataSet> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Dataset" .
 # 
 # https://w3id.org/survey-ontology#SurveyElement
 <https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#comment> "An element of a survey procedure." .
 <https://w3id.org/survey-ontology#SurveyElement> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Element" .
 # 
 # https://w3id.org/survey-ontology#SurveyProcedure
 <https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
 <https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/wfdesc#Process> .
+<https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure describing the structure of the survey as an ordered graph of connected survey elements." .
 <https://w3id.org/survey-ontology#SurveyProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Procedure" .
 # 
 # https://w3id.org/survey-ontology#SurveyTarget
 <https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity representing the target of a survey completion. The same survey can be completed by the same participant considering different survey targets." .
 <https://w3id.org/survey-ontology#SurveyTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Survey Target" .
 # 
 # https://w3id.org/survey-ontology#Talk
 <https://w3id.org/survey-ontology#Talk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/survey-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/survey-ontology#SurveyElement> .
+<https://w3id.org/survey-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#comment> "A survey element to be provided to the participant within a survey procedure (e.g. text, link, image, etc.)." .
 <https://w3id.org/survey-ontology#Talk> <http://www.w3.org/2000/01/rdf-schema#label> "Talk" .
 # 
 # 
@@ -347,36 +462,34 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/survey-ontology
-<https://w3id.org/survey-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/survey-ontology#
-<https://w3id.org/survey-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/survey-ontology#> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/survey-ontology> .
-# 
 # https://w3id.org/survey-ontology#Dropdown
 <https://w3id.org/survey-ontology#Dropdown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/survey-ontology#Dropdown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Dropdown> <http://www.w3.org/2000/01/rdf-schema#comment> "Visualisation of the available textual answers of a question using a dropdown menu." .
 <https://w3id.org/survey-ontology#Dropdown> <http://www.w3.org/2000/01/rdf-schema#label> "Dropdown" .
 # 
 # https://w3id.org/survey-ontology#Emoji
 <https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/2000/01/rdf-schema#comment> "Visualisation of the available answers of a question using a set of emojis representing their values." .
 <https://w3id.org/survey-ontology#Emoji> <http://www.w3.org/2000/01/rdf-schema#label> "Emoji" .
 # 
 # https://w3id.org/survey-ontology#Option
 <https://w3id.org/survey-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/survey-ontology#Option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Option> <http://www.w3.org/2000/01/rdf-schema#comment> "Visualisation of the available textual answers of a question listing them as different options." .
 <https://w3id.org/survey-ontology#Option> <http://www.w3.org/2000/01/rdf-schema#label> "Option" .
 # 
 # https://w3id.org/survey-ontology#Scale
 <https://w3id.org/survey-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/survey-ontology#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Scale> <http://www.w3.org/2000/01/rdf-schema#comment> "Visualisation of the available answers as a scale of values (e.g. using stars)." .
 <https://w3id.org/survey-ontology#Scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
 # 
 # https://w3id.org/survey-ontology#Slider
 <https://w3id.org/survey-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/survey-ontology#Slider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/survey-ontology#QuestionVisualization> .
+<https://w3id.org/survey-ontology#Slider> <http://www.w3.org/2000/01/rdf-schema#comment> "Visualisation of the available answers of a question using a slider that allows the user to select the answer between the minimum and maximum values available." .
 <https://w3id.org/survey-ontology#Slider> <http://www.w3.org/2000/01/rdf-schema#label> "Slider" .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

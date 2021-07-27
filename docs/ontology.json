@@ -17,11 +17,65 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/linked-data/cube#DataSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#Slice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#dataSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a completed question to a survey dataset."
+  } ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a completed survey with the completed questions defined in the survey completion task by the participant."
+  } ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/usageNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#ResearchObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfdesc#Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfdesc#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#Artifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#ProcessRun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#describedByParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a completed survey to the completed questions composing it."
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wfprov#wasOutputFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a completed survey to the survey completion task generating it."
+  } ]
 }, {
   "@id" : "http://w3id.org/rv-ontology#Model",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -32,14 +86,47 @@
   "@id" : "http://w3id.org/rv-ontology#Variable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.openarchives.org/ore/terms/aggregates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a survey research object to the resources composing it (e.g. survey dataset, survey procedure, etc.)"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#endedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Timestamp at which a survey completion task is ended."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#startedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Timestamp at which a survey completion task is started."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a survey completion task to the participant performing it."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasAttributedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a completed survey and/or a completed question to the participant performing the survey completion task."
+  } ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/survey-ontology",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "https://w3id.org/survey-ontology#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
     "@value" : "Work on the Survey Ontology and Coney (https://survey.actionproject.eu/coney/) was partially supported by the ACTION project (grant agreement number 824603), co-funded by the European Commission under the Horizon 2020 Framework Programme."
@@ -59,7 +146,7 @@
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@language" : "en",
-    "@value" : "The Survey Ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology"
+    "@value" : "The Survey Ontology is available under the Creative Commons Attribution 4.0 license; see http://creativecommons.org/licenses/by/4.0/. In a nutshell, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement \"This work is based on the Survey Ontology, developed by the Knowledge Technologies group at Cefriel, Milan\" and link back to https://w3id.org/survey-ontology."
   } ],
   "http://purl.org/dc/elements/1.1/subject" : [ {
     "@language" : "en",
@@ -70,7 +157,7 @@
     "@value" : "The Survey Ontology"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by/3.0/"
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "sur"
@@ -86,22 +173,9 @@
     "@language" : "en",
     "@value" : "Survey Ontology"
   } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.org/linked-data/cube#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/ro#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/wfdesc#"
-  }, {
-    "@id" : "http://purl.org/wf4ever/wfprov#"
-  }, {
-    "@id" : "http://w3id.org/rv-ontology#"
-  }, {
-    "@id" : "http://www.w3.org/ns/prov#"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "V 1.0, Release 2020"
+    "@value" : "V 1.1, Release 2021"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://w3id.org/survey-ontology"
@@ -109,6 +183,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Answer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An available answer for a survey question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Answer"
   } ],
@@ -123,6 +200,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#CheckboxQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A question having a limited set of potential answers and allowing the participant to select more than one answer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Checkbox Question"
   } ],
@@ -132,6 +212,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#ClosedAnswer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An available closed answer for a survey question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Closed Answer"
   } ],
@@ -141,6 +224,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#ClosedQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A question in a survey with a defined set of available answers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Closed Question"
   } ],
@@ -150,6 +236,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#CompletedQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Answer provided by a participant in completing a survey for a specific question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Completed Question"
   } ],
@@ -163,6 +252,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#CompletedSurvey",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A survey completed by a participant following a survey procedure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Completed Survey"
   } ],
@@ -174,18 +266,27 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Dropdown",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/survey-ontology#QuestionVisualization" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Visualisation of the available textual answers of a question using a dropdown menu."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dropdown"
   } ]
 }, {
   "@id" : "https://w3id.org/survey-ontology#Emoji",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/survey-ontology#QuestionVisualization" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Visualisation of the available answers of a question using a set of emojis representing their values."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Emoji"
   } ]
 }, {
   "@id" : "https://w3id.org/survey-ontology#LatentVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A latent variable represents a variable that is measured indirectly through different observable variables."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Latent Variable"
   } ],
@@ -195,6 +296,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#MultipleChoiceQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A question having a limited set of potential answers and allowing the participant to select only one answer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Multiple Choice Question"
   } ],
@@ -204,6 +308,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#MultipleInputQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An open-ended answer allowing multiple inputs from the participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Multiple Input Question"
   } ],
@@ -213,6 +320,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#ObservableVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A variable that is directly measured collecting data about it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Observable Variable"
   } ],
@@ -222,6 +332,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#OpenAnswer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An open answer for a survey open-ended question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Open Answer"
   } ],
@@ -231,6 +344,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#OpenQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An open-ended question in a survey."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Open Question"
   } ],
@@ -240,12 +356,18 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Option",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/survey-ontology#QuestionVisualization" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Visualisation of the available textual answers of a question listing them as different options."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Option"
   } ]
 }, {
   "@id" : "https://w3id.org/survey-ontology#Participant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A participant to a survey study."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Participant"
   } ],
@@ -255,6 +377,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Question",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A question requiring an input from the participant in a survey."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Question"
   } ],
@@ -267,6 +392,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#QuestionVisualization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A visualisation method for a multiple choice question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Question Visualization"
   } ],
@@ -276,12 +404,18 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Scale",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/survey-ontology#QuestionVisualization" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Visualisation of the available answers as a scale of values (e.g. using stars)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Scale"
   } ]
 }, {
   "@id" : "https://w3id.org/survey-ontology#SingleInputQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An open-ended answer expecting a single input from the participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Single Input Question"
   } ],
@@ -291,12 +425,18 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Slider",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/survey-ontology#QuestionVisualization" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Visualisation of the available answers of a question using a slider that allows the user to select the answer between the minimum and maximum values available."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Slider"
   } ]
 }, {
   "@id" : "https://w3id.org/survey-ontology#Survey",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A research object aggregating resources for a survey research study."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey"
   } ],
@@ -306,6 +446,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#SurveyCompletionTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Execution of a survey procedure by a participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey Completion Task"
   } ],
@@ -315,6 +458,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#SurveyDataSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Set of data collected for a survey considering the completions performed by participants."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey Dataset"
   } ],
@@ -326,6 +472,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#SurveyElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An element of a survey procedure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey Element"
   } ],
@@ -335,6 +484,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#SurveyProcedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Procedure describing the structure of the survey as an ordered graph of connected survey elements."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey Procedure"
   } ],
@@ -346,6 +498,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#SurveyTarget",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Entity representing the target of a survey completion. The same survey can be completed by the same participant considering different survey targets."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Survey Target"
   } ],
@@ -355,6 +510,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#Talk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A survey element to be provided to the participant within a survey procedure (e.g. text, link, image, etc.)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Talk"
   } ],
@@ -364,6 +522,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#answeredIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property defining for a completed question the survey completion task, performed by a survey participant, collecting this output."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#CompletedQuestion"
   } ],
@@ -376,6 +537,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#completedFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property associating a survey completion to the survey target for that completion."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyCompletionTask"
   } ],
@@ -388,6 +552,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#completesQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a completed question to the question element of the survey that is answered by the participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#CompletedQuestion"
   } ],
@@ -398,8 +565,17 @@
     "@id" : "https://w3id.org/survey-ontology#Question"
   } ]
 }, {
+  "@id" : "https://w3id.org/survey-ontology#describedByProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Property linking a survey completion task to the survey procedure describing it."
+  } ]
+}, {
   "@id" : "https://w3id.org/survey-ontology#hasAnswer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a completed question to the answer element of the survey that is selected by the participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#CompletedQuestion"
   } ],
@@ -412,6 +588,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasAnswerText",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a completed question to the textual answer provided by the user."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#CompletedQuestion"
   } ],
@@ -424,6 +603,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasCompletionTimestamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Timestamp at which a survey question is completed by the participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#CompletedQuestion"
   } ],
@@ -436,6 +618,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasLatentVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a survey question to the latent variable measured by the question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#Question"
   } ],
@@ -448,6 +633,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasLink",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Link associated to a talk survey element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#Talk"
   } ],
@@ -460,6 +648,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasObservableVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a survey question to the observable variable measured by the question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#Question"
   } ],
@@ -472,6 +663,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasOrderNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Order for a closed answer among the available answers for a question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#ClosedAnswer"
   } ],
@@ -484,6 +678,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasPoints",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Points associated to an answer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#ClosedAnswer"
   } ],
@@ -496,6 +693,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Status of a survey procedure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyProcedure"
   } ],
@@ -508,6 +708,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasText",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description for a survey element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyElement"
   } ],
@@ -520,6 +723,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Title for a survey procedure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyProcedure"
   } ],
@@ -532,6 +738,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Value for a survey answer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#ClosedAnswer"
   } ],
@@ -544,6 +753,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#hasVisualization",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a survey question to the visualisation expected for the question."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#MultipleChoiceQuestion"
   } ],
@@ -556,6 +768,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#inSurveyProcedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking a survey element to the survey procedure it belongs to."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyElement"
   } ],
@@ -568,6 +783,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#leadsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property describing the flow between different survey elements."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyElement"
   } ],
@@ -580,6 +798,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#participantId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identifier for a participant."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#Participant"
   } ],
@@ -592,6 +813,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#sessionId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identifier for a survey completion task."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyCompletionTask"
   } ],
@@ -604,6 +828,9 @@
 }, {
   "@id" : "https://w3id.org/survey-ontology#startsWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property identifying the first survey element for a survey procedure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/survey-ontology#SurveyProcedure"
   } ],
