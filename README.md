@@ -15,7 +15,7 @@ cases, user stories, glossary of terms, etc., will be available in the [Vocabula
 
 ### Survey Ontology In-Use
 List of project and datasets using the Survey Ontology:
-- Damiano Scandolari, Gloria Re Calegari, Mario Scrocca, & Irene Celino. (2020). TESS Network Motivation Survey Dataset [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3739058
+- Damiano Scandolari, Gloria Re Calegari, Mario Scrocca, & Irene Celino. (2021). TESS Network Motivation Survey (Version 1.1) [Data set]. Zenodo. https://zenodo.org/record/5140351
 - Mario Scrocca, Marco Comerio, Damiano Scandolari, & Gloria Re Calegari. (2021). R2R Choice Criteria Survey Dataset (Version 1.0.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4593471
 
 To add something to the list please either submit a pull request or open an issue.
