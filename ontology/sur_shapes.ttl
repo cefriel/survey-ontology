@@ -1,0 +1,171 @@
+# baseURI: https://w3id.org/survey-ontology#
+# prefix: sur
+
+@prefix sur: <https://w3id.org/survey-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sur:AnswerShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Answer shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path [
+          sh:inversePath sur:startsWith ;
+        ] ;
+      sh:maxCount 0 ;
+    ] ;
+  sh:targetClass sur:Answer ;
+  sh:xone (
+      [
+        sh:property [
+            sh:path sur:leadsTo ;
+            sh:class sur:Talk ;
+            sh:maxCount 1 ;
+          ] ;
+      ]
+      [
+        sh:property [
+            sh:path sur:leadsTo ;
+            sh:class sur:Question ;
+            sh:maxCount 1 ;
+          ] ;
+      ]
+    ) ;
+.
+
+sur:ClosedQuestionShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Closed question shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:leadsTo ;
+      sh:class sur:ClosedAnswer ;
+      sh:minCount 1 ;
+    ] ;
+  sh:targetClass sur:ClosedQuestion ;
+.
+
+sur:CompletedQuestionShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Completed question shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:hasAnswer ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:targetClass sur:CompletedQuestion ;
+  sh:xone (
+      [
+        sh:property [
+            sh:path sur:hasAnswerText ;
+            sh:maxCount 0 ;
+          ] ;
+      ]
+      [
+        sh:property [
+            sh:path sur:hasAnswerText ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+          ] ;
+      ]
+    ) ;
+.
+
+sur:OpenAnswerShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Open answer shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:hasText ;
+      sh:maxCount 0 ;
+    ] ;
+  sh:targetClass sur:OpenAnswer ;
+.
+
+sur:OpenQuestionShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Open question shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:leadsTo ;
+      sh:class sur:OpenAnswer ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:targetClass sur:OpenQuestion ;
+.
+
+sur:QuestionShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Question shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:leadsTo ;
+      sh:class sur:Answer ;
+      sh:minCount 1 ;
+    ] ;
+  sh:targetClass sur:Question ;
+.
+
+sur:SurveyShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Survey shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path sur:startsWith ;
+      sh:class sur:SurveyElement ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+  sh:targetClass sur:SurveyProcedure ;
+.
+
+sur:TalkShape
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Talk shape" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:targetClass sur:Talk ;
+  sh:or (
+      [
+        sh:property [
+            sh:path sur:leadsTo ;
+            sh:maxCount 0 ;
+          ] ;
+      ]
+      [
+        sh:xone (
+          [
+            sh:property [
+                sh:path sur:leadsTo ;
+                sh:class sur:Talk ;
+                sh:maxCount 1 ;
+              ] ;
+          ]
+          [
+            sh:property [
+                sh:path sur:leadsTo ;
+                sh:class sur:Question ;
+                sh:maxCount 1 ;
+              ] ;
+          ]
+        )
+      ]
+  ) ;
+.
