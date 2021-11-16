@@ -20,6 +20,12 @@ List of project and datasets using the Survey Ontology:
 
 To add something to the list please either submit a pull request or open an issue.
 
+## How to cite ##
+
+If you use the Survey Ontology in your work, please cite the following article:
+
+> Mario Scrocca, Damiano Scandolari, Gloria Re Calegari, Ilaria Baroni and Irene Celino. _The Survey Ontology: Packaging Survey Research as Research Objects_, Proceedings of the 2nd Workshop on Data and Research Objects Management for Linked Open Science - co-located with ISWC 2021, [https://doi.org/10.4126/FRL01-006429412](https://doi.org/10.4126/FRL01-006429412), 2021.
+
 ### License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International
