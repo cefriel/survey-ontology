@@ -1,6 +1,4 @@
-# baseURI: https://w3id.org/survey-ontology#
-# prefix: sur
-
+# @prefix sur: <http://www.w3id.org/survey-ontology#> .
 @prefix sur: <https://w3id.org/survey-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -62,10 +60,37 @@ sur:CompletedQuestionShape
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
       sh:path sur:hasAnswer ;
-      sh:maxCount 1 ;
       sh:minCount 1 ;
     ] ;
   sh:targetClass sur:CompletedQuestion ;
+  sh:property [
+      sh:path sur:completesQuestion ;
+      sh:minCount 1 ;
+    ] ;
+  sh:xone (
+      [
+        sh:property [
+            sh:path (
+                sur:hasAnswer
+                [
+                  sh:inversePath sur:leadsTo ;
+                ]
+              ) ;
+            sh:maxCount 0 ;
+          ] ;
+      ]
+      [
+        sh:property [
+            sh:path (
+                sur:hasAnswer
+                [
+                  sh:inversePath sur:leadsTo ;
+                ]
+              ) ;
+            sh:equals sur:completesQuestion ;
+          ] ;
+      ]
+    ) ;
   sh:xone (
       [
         sh:property [
